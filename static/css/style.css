@@ -1,0 +1,175 @@
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+section#main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #651616; }
+  section#main .container {
+    padding: 75px 10px 10px 10px; }
+  section#main #crest {
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    opacity: 0; }
+  section#main #title-h1, section#main #title-h2 {
+    opacity: 0;
+    margin-left: -25px; }
+  section#main #title-h2 {
+    margin-right: -20px; }
+  section#main h1, section#main h2 {
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1em; }
+  section#main h2 {
+    font-weight: 300;
+    font-size: 1.3em; }
+
+section#footer {
+  width: 100vw;
+  height: 75vh; }
+
+section#layout {
+  width: 100vw;
+  background-color: #fff; }
+  section#layout .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
+    height: 100%;
+    background-color: white; }
+  section#layout .banner {
+    height: auto;
+    width: 75vw;
+    background-color: #fff;
+    clear: both; }
+    section#layout .banner img {
+      width: 100%;
+      max-height: 100%; }
+  section#layout .span3 {
+    width: 14vw; }
+  section#layout .about {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+    width: 50vw;
+    padding: 50px 0 30px 15px;
+    line-height: 1.6em;
+    font-size: 1.1em; }
+    section#layout .about h3, section#layout .about h5, section#layout .about h6 {
+      text-transform: uppercase;
+      font-family: "Raleway",sans-serif;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-align: center; }
+    section#layout .about h5 {
+      font-weight: 400;
+      font-size: 1.1em;
+      line-height: 2px;
+      margin-bottom: 40px; }
+    section#layout .about h6 {
+      font-size: 1.1em;
+      text-align: left;
+      font-weight: 700;
+      line-height: 1em;
+      padding-top: 15px; }
+    section#layout .about h7 {
+      font-size: 1em; }
+    section#layout .about p {
+      margin: 20px 0 20px 0; }
+    section#layout .about .row {
+      margin: 20px 0 5px 0; }
+    section#layout .about .span2 {
+      width: 9vw; }
+    section#layout .about #day-nav {
+      text-align: center; }
+    section#layout .about .day-nav {
+      margin-top: 10px;
+      text-align: center; }
+    section#layout .about .day-nav li {
+      list-style-type: none;
+      color: #000;
+      display: inline-block;
+      font-weight: 400;
+      margin: 0 15px 0 15px; }
+    section#layout .about .day-nav li:hover {
+      font-weight: 700;
+      color: #ae1717; }
+  section#layout .nav .navbar li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    text-align: right;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px; }
+  section#layout .nav .navbar li.active, section#layout .nav .navbar li:hover {
+    color: #ae1717;
+    font-weight: 700; }
+  section#layout .nav .navbar {
+    float: right; }
+  section#layout .nav .logo {
+    padding: 0 10px 0 15px;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    float: left; }
+  section#layout .nav .logo:hover {
+    color: #ae1717;
+    font-weight: 700; }
+  section#layout .nav .sidebar {
+    margin-top: 50px;
+    border-right: 1px solid #ccc;
+    height: 100%; }
+    section#layout .nav .sidebar li {
+      list-style-type: none;
+      padding: 5px 30px 0 0;
+      margin-bottom: 15px;
+      color: #000;
+      font-family: "Raleway", sans-serif;
+      text-transform: uppercase;
+      font-size: .8em;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-align: right; }
+    section#layout .nav .sidebar li.active, section#layout .nav .sidebar .navbar li:hover, section#layout .nav .navbar .sidebar li:hover {
+      border-left: 5px solid #ae1717;
+      font-weight: 700; }
+    section#layout .nav .sidebar li:hover {
+      font-weight: 700;
+      text-decoration: none; }
+  section#layout .portrait li {
+    width: 200px;
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px; }
+  section#layout .img-caption {
+    width: 200px;
+    text-align: none; }
+    section#layout .img-caption .caption {
+      height: 70px; }
+    section#layout .img-caption h6 {
+      font-size: .8em;
+      padding-left: 10px;
+      line-height: 0; }
+    section#layout .img-caption h8 {
+      font-size: .8em;
+      padding-left: 10px;
+      top: -5px;
+      line-height: 0; }

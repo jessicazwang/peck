@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Rush | Phi Kappa Theta
+{% endblock %}
+
+{% block nav %}
+	<a href="/website/about"><li>About</li></a>
+	<a href="/website/rush"><li class="active">Rush</li></a>
+	<a href="/website/brothers"><li>Brothers</li></a>
+	<a href="/website/house"><li>House</li></a>
+	<a href="/website/activities"><li>Activities</li></a>
+{% endblock %}
+
+{% block banner %}
+<img src="/static/img/pledging.jpg">
+{% endblock %}
+
+{% block sidebar %}
+	<a href="/website/rush"><li>Rush Schedule</li></a>
+	<a href="/website/survival"><li>Survival Guide</li></a>
+	<a href="/website/faq"><li>Rush FAQs</li></a>
+	<a href="/website/pledging"><li class="active">Pledging</li></a>
+{% endblock %}
+
+
+{% block page-content %}
+
+<div class="about">
+	<h3>Pledging</h3>
+	<h5>Phi Kappa Theta</h5>
+
+
+	<h6>If I Pledge, Will It Suck?</h6>
+	<p>So, you may be asking yourself, "What will my life be like if I pledge PKT?" We incorporate freshman into our house through a program designed to familiarize pledges with the house, MIT, and the Boston area.</p>
+
+	<h6>Pledge PKT, and Get a Free Big Brother</h6>
+	<p>As part of the pledge program, each member of the pledge class selects a big brother, who helps them adjust to life at the house and MIT. Our goal is to make our incoming members feel at home in the house, while developing a sense of pride in the fraternity and themselves, ultimately becoming men we are proud to call brothers.</p>
+	<h6>Can I Keep My Personality?</h6>
+	<p>Joining Phi Kappa Theta doesn't mean you have to relinquish your personality. We pride ourselves on our varying backgrounds and perspectives. We have our share of sports enthusiasts and artists, pyrotechnicians and pranksters, socialites and studiers, punks and pagans, hairy people and rap artists, spam eaters and vegetarians, and many interesting combinations of the above. In other words, at PKT it is easy to just be yourself.</p>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+About | Phi Kappa Theta
+{% endblock %}
+
+{% block nav %}
+	<a href="/website/about"><li class="active">About</li></a>
+	<a href="/website/rush"><li>Rush</li></a>
+	<a href="/website/brothers"><li>Brothers</li></a>
+	<a href="/website/house"><li>House</li></a>
+	<a href="/website/activities"><li>Activities</li></a>
+{% endblock %}
+
+{% block banner %}
+<img src="/static/img/beach1.jpg">
+{% endblock %}
+
+{% block sidebar %}
+	<a href="/website/about"><li>About Mass Eta</li></a>
+	<a href="/website/national"><li>National History</li></a>
+	<a href="/website/ideals"><li class="active">The Four Ideals</li></a>
+	<a href="/website/motto"><li>Our Motto</li></a>
+{% endblock %}
+
+
+{% block page-content %}
+
+<div class="about">
+				<h3>The Four Ideals</h3>
+				<h5>About Us</h5>
+
+				<h6>Fraternal: Duty to Man</h6>
+				<p>To provide the tangible and intangible aids necessary to establish a closely knit collegiate community whose members enjoy a mode of living that is conducive to the formation of gentlemen imbued with principles and ideals and to prepare them to contribute to the world community upon graduation.</p>
+				<h6>Intellectual: Duty to Self and Parents</h6>
+				<p>To remind our brothers that outstanding scholastic achievement is a primary personal responsibility, and to encourage a commitment to the university that provides each member with his intellectual formation.</p>
+				<h6>Social: Duty to Society</h6>
+				<p>To encourage each member to identify himself with his collegiate and civic community by active participation and service, thus fostering a vigorous spirit of loyalty to Alma Mater and selflessness to all men.</p>
+				<h6>Spiritual: Duty to God</h6>
+				<p>To deepen the spiritual and enrich the temporal lives of its members through a well-balanced program of fraternal, intellectual, social and service activities.</p>
+
+			</div>
+
+
+{% endblock %}

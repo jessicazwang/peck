@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+The House | Phi Kappa Theta
+{% endblock %}
+
+{% block nav %}
+	<a href="/website/about"><li>About</li></a>
+	<a href="/website/rush"><li>Rush</li></a>
+	<a href="/website/brothers"><li>Brothers</li></a>
+	<a href="/website/house"><li class="active">House</li></a>
+	<a href="/website/activities"><li>Activities</li></a>
+{% endblock %}
+
+{% block banner %}
+<img src="/static/img/house.jpg">
+{% endblock %}
+
+{% block sidebar %}
+	<a href="/website/house"><li>Our House</li></a>
+	<a href="/website/first"><li>First Floor</li></a>
+	<a href="/website/second"><li class="active">Second Floor</li></a>
+	<a href="/website/third"><li>Third Floor</li></a>
+	<a href="/website/fourth"><li>Fourth Floor</li></a>
+	<a href="/website/roofdeck"><li>Roofdeck</li></a>
+	<a href="/website/basement"><li>Basement</li></a>
+{% endblock %}
+
+{% block page-content %}
+
+<div class="about">
+				<h3>The House</h3>
+				<h5>229 Commonwealth Ave, Boston</h5>
+				<p>
+				We live in a four-story, century-old brownstone in Boston's affluent Back Bay. Our house serves as our home away from home - it's where we can unwind after hours of problem sets, catch dinner, hang out, and wander into random philosophical discussions late at night.
+				</p>
+				<p>Our house overlooks the beautiful, tree-lined, Commonwealth Avenue Mall. One block away is Newbury Street, world-famous for its restaurants, boutiques, and stores. A short walk brings you to Fenway Park, the Prudential Mall, Boston Common, and the Boston Public Library. Also, with the Copley T station two blocks away, all of Boston can be reached in minutes. And MIT is only a five-minute bike ride away.
+			</div>
+
+
+{% endblock %}
