@@ -4,7 +4,7 @@ body, html {
 	height:100%;
 	padding: 0;
 	margin: 0;
-	
+
 }
 
 section#main {
@@ -12,53 +12,10 @@ section#main {
 	height: 100vh;
 	background-color: $deep-red;
 
-	.container {
-		padding: 75px 10px 10px 10px
-	}
 
-	#crest {
-		width:30vw;
-		margin-left:auto;
-		margin-right:auto;
-		margin-bottom:40px;
-		opacity:0;
-	}
-
-	#title-h1 {
-		opacity:0;
-		margin-left:-25px;
-	}
-
-	#title-h2 {
-		@extend #title-h1;
-		margin-right:-20px;
-	}
-
-	h1 {
-		text-align: center;
-		position:relative;
-		margin-left:auto;
-		margin-right:auto;
-		color: #fff;
-		font-family: 'Raleway',sans-serif;
-		font-weight: 600;
-		font-size:1.6em;
-		text-transform: uppercase;
-		letter-spacing:4px;
-		line-height:1em;
-	}
-
-	h2 {
-		@extend h1;
-		font-weight:300;
-		font-size:1.3em;
-	}
 }
 
-section#footer {
-	width:100vw;
-	height:75vh;
-}
+
 
 section#layout {
 	width:100vw;

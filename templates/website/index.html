@@ -1,33 +1,114 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}" />
+{% endblock %}
+
 {% block title %}
 MIT Phi Kappa Theta | Mass Eta
 {% endblock %}
 
 {% block content %}
-	<section id="main">
-		<div class="container">
-			<div id="crest">
-				<img src="/static/img/crest.png"/>
+
+<div id="wrapper">
+	<ul id="mask">
+		<li id="box1" class="box">
+			<a name="box1"></a>
+			<div class="container">
+				<div id="crest">
+					<img src="/static/img/crest.png"/>
+				</div>
+				<div id="title-h1">
+					<h1>MIT Phi Kappa Theta</h1>
+				</div>
+				<div id="title-h2">
+					<h2>Mass Eta</h2>
+				</div>
 			</div>
-			<div id="title-h1">
-				<h1>MIT Phi Kappa Theta</h1>
+			<a href="#box2"><img src="/static/img/white-arrow.png" id="arrow1r" class="arrowr"/></a>
+		</li>
+		<li class="box"></li>
+		<li id="box2" class="box">
+			<a name="box2"></a>
+			
+			
+			<div class="container">
+				<div class="contents">
+					<h4>About</h4>
+					<div class="description">
+						<h3>Lorem ipsum filler text here. Insert description here. We are cool. Join our frat. Lorem ipsum insert more text here. Learn more about us on our website. Rush us or something like that. We have a cool house with a cool pool table and other stuff.</h3>
+
+						<a href="/about">
+							<div class="learnmore"><h1>More about us</h1></div>
+						</a>
+					</div>
+				</div>
+
 			</div>
-			<div id="title-h2">
-				<h2>Mass Eta</h2>
+			<a href="#box1"><img src="/static/img/white-arrow2.png" id="arrow2l" class="arrowl"/></a>
+			<a href="#box3"><img src="/static/img/white-arrow.png" id="arrow2r" class="arrowr"/></a>
+		</li>
+		<li class="box"></li>
+		<li id="box3" class="box">
+			<a name="box3"></a>
+			
+			<div class="container">
+				<div class="contents">
+					<h4>Rush</h4>
+					<div class="description">
+						<h3>Lorem ipsum filler text here. Insert description here. We are cool. Join our frat. Lorem ipsum insert more text here. Learn more about us on our website. Rush us or something like that. We have a cool house with a cool pool table and other stuff.</h3>
+						<a href="/rush">
+							<div class="learnmore"><h1>rush schedule</h1></div>
+						</a>
+
+					</div>
+
+				</div>
 			</div>
-		</div>
-	</section>
-	<section id="main-about">
-		About us
-	</section>
+			<a href="#box2"><img src="/static/img/white-arrow2.png" id="arrow3l" class="arrowl"/></a>
+			<a href="#box4"><img src="/static/img/white-arrow.png" id="arrow3r" class="arrowr"/></a>
+		</li>
+		<li class="box"></li>
+		<li id="box4" class="box">
+			<a name="box4"></a>
+			<div class="container">
+				<div class="contents">
+					<h4>Learn more</h4>
+					<div class="description">
+						<h3>Lorem ipsum filler text here. Insert description here. We are cool. Join our frat. Lorem ipsum insert more text here. Learn more about us on our website. Rush us or something like that. We have a cool house with a cool pool table and other stuff.</h3>
+						<a href="/brothers">
+							<div class="learnmore"><h1>Check us out</h1></div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<a href="#box3"><img src="/static/img/white-arrow2.png" id="arrow4l" class="arrowl"/></a>
+			<a href="#box5"><img src="/static/img/white-arrow.png" id="arrow4r" class="arrowr"/></a>
+		</li>
+		<li class="box"></li>
+		<li id="box5" class="box">
+			<a name="box5"></a>
+			<div class="container">
+				<div class="contents">
+					<h4>Contact us</h4>
+					<div class="description">
+						<h3>Want to learn more about our brotherhood? Drop us a line!</h3>
+						<a href="mailto:pkt-brothers@mit.edu">
+							<div class="learnmore"><h1>Contact</h1></div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<a href="#box4"><img src="/static/img/white-arrow2.png" id="arrow5l" class="arrowl"/></a>
+		</li>
 
-	<section id="main-rush">
-		Rush 
-	</section>
+</ul>
+</div>
 
-	<section id="">
+{% endblock %}
 
-	</section>
-
+{% block scripts %}
+<script src="{% static 'js/jquery.scrollTo.min.js' %}"></script>
 {% endblock %}

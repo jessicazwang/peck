@@ -11,6 +11,9 @@ $(document).ready(function(){
 			opacity:1,
 			marginRight:"+=20"
 	},1500);
+	$('#arrow1r').delay(800).animate({
+		opacity:.3
+	})
 
 	$(function() {
 		$('div#brother').makeCaption({
@@ -37,8 +40,32 @@ $(document).ready(function(){
 		})
 	})
 
-
-
+	$('img#arrow1r').click(function(){
+		$(document).scrollTo($('#box2'),800)
+	})
+	$('img#arrow2l').click(function(){
+		$(document).scrollTo($('#box1'),800)
+	})
+	$('img#arrow2r').click(function(){
+		$(document).scrollTo($('#box3'),800)
+	})
+	$('img#arrow3l').click(function(){
+		$(document).scrollTo($('#box2'),800)
+	})
+	$('img#arrow3r').click(function(){
+		$(document).scrollTo($('#box4'),800)
+	})
+	$('img#arrow4l').click(function(){
+		$(document).scrollTo($('#box3'),800)
+	})
+	$('img#arrow4r').click(function(){
+		$(document).scrollTo($('#box5'),800)
+	})
+	$('img#arrow5l').click(function(){
+		$(document).scrollTo($('#box4'),800)
+	})
 
 
 });
+
+

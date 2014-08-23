@@ -36,10 +36,6 @@ section#main {
     font-weight: 300;
     font-size: 1.3em; }
 
-section#footer {
-  width: 100vw;
-  height: 75vh; }
-
 section#layout {
   width: 100vw;
   background-color: #fff; }

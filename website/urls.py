@@ -29,6 +29,5 @@ urlpatterns = patterns('',
         url(r'^fourth/$',views.fourth,name='fourth'),
         url(r'^roofdeck/$',views.roofdeck,name='roofdeck'),
         url(r'^basement/$',views.basement,name='basement'),
-        url(r'^getBrother/$',views.getBrother,name='getBrother')
-
+        url(r'^getBrother/$',views.getBrother,name='getBrother'),
         )

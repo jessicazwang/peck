@@ -14,7 +14,10 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/img-captions.css' %}" />
 
-	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Raleway:300,400,500,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+    {% block stylesheets %}
+    {% endblock %}
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,700italic,400,700|Raleway:300,400,500,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -26,8 +29,12 @@
 
     <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
     <script src="{% static 'js/effects.js' %}"></script>
     <script src="{% static 'js/img-captions.js' %}"></script>
+
+    {% block scripts %}
+    {% endblock %}
 
 </body>
 </html>
