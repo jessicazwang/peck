@@ -177,3 +177,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 	}
 }
 
+@media (max-width: 760px) { 
+	#crest {
+		width:300px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:40px;
+		opacity:0;
+	}
+
+}
+
