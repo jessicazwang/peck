@@ -22,7 +22,7 @@ $(document).ready(function(){
 	$('a#brother').click(function(){
 		var brother;
 		brother = $(this).attr("data-componentID");
-		$.get('/website/getBrother', {bro: brother}, function(data){
+		$.get('/getBrother', {bro: brother}, function(data){
 			info = JSON.parse(data)
 			$('.modal-content .name').html(info['name'])
 			$('.modal-content .initials').html(info['initials'])
