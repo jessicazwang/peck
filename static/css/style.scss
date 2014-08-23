@@ -18,7 +18,7 @@ section#main {
 
 
 section#layout {
-	width:100vw;
+	width:98vw;
 	background-color:#fff;
 
 	.content {
@@ -50,8 +50,8 @@ section#layout {
 		margin-left:auto;
 		margin-right:auto;
 		font-family: "Open Sans", sans-serif;
-		width:50vw;
-		min-width:320px;
+		width:55vw;
+		min-width:300px;
 		padding: 50px 0 30px 15px;
 		line-height:1.6em;
 		font-size:1.1em;
@@ -102,7 +102,12 @@ section#layout {
 		}
 
 		.span2 {
-			width:9vw;
+			width:7vw;
+			margin-right:10px;
+		}
+
+		.span4 {
+			width:400px;
 		}
 
 		#day-nav {
@@ -309,12 +314,21 @@ section#layout {
 	}
 
 	section#layout {
+
 		.content {
-			width:100% !important;
+			width:99% !important;
 		}
 
 		.span3 {
 			width:100% !important;
+		}
+
+		.span4 {
+			width:100% !important;
+		}
+
+		.span2 {
+			width: 100% !important;
 		}
 
 		.banner {
