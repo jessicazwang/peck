@@ -4,6 +4,7 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 from website.models import Brother
 import requests
+import json
 
 
 def index(request):
@@ -59,29 +60,52 @@ def pledging(request):
 def fifteens(request):
 	context=RequestContext(request)
 	fifteens_info=[]
-	sixteens_info=[]
-	seventeens_info=[]
 
 	brothers = Brother.objects.all().order_by('name')
 	for brother in brothers:
 		if brother.year == 2015:
 			fifteens_info.append((brother.name,brother.photo,brother.nickname,brother.initials))
-		elif brother.year == 2016:
-			sixteens_info.append((brother.name,brother.photo))
-		else:
-			seventeens_info.append((brother.name,brother.photo))
+
 
 	context_dict = {'fifteens_info':fifteens_info}
 
 	return render_to_response('website/brothers/fifteens.html',context_dict,context)
 
+def getBrother(request):
+	context=RequestContext(request)
+	brother_name = None
+
+	if request.method == 'GET':
+		brother_name = request.GET['bro']
+
+	b = Brother.objects.get(initials=brother_name)
+	bro = {'name':b.name,'initials':b.initials,'nickname':b.nickname,'quote':b.quote,'hometown':b.hometown,'major':b.major,'activities':b.activities,'blurb':b.blurb,'photo':b.photo}
+
+	return HttpResponse(json.dumps(bro))
+
 def sixteens(request):
 	context=RequestContext(request)
-	return render_to_response('website/brothers/sixteens.html',context)
+	sixteens_info=[]
+
+	brothers = Brother.objects.all().order_by('name')
+	for brother in brothers:
+		if brother.year == 2016:
+			sixteens_info.append((brother.name,brother.photo,brother.nickname,brother.initials))
+
+	context_dict = {'sixteens_info':sixteens_info}
+	return render_to_response('website/brothers/sixteens.html',context_dict,context)
 
 def seventeens(request):
 	context=RequestContext(request)
-	return render_to_response('website/brothers/seventeens.html',context)
+	seventeens_info=[]
+
+	brothers = Brother.objects.all().order_by('name')
+	for brother in brothers:
+		if brother.year == 2017:
+			seventeens_info.append((brother.name,brother.photo,brother.nickname,brother.initials))
+
+	context_dict = {'seventeens_info':seventeens_info}
+	return render_to_response('website/brothers/seventeens.html',context_dict,context)
 
 def academics(request):
 	context=RequestContext(request)

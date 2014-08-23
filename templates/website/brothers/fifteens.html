@@ -20,7 +20,7 @@ Brothers | Phi Kappa Theta
 
 {% block sidebar %}
 	<a href="/website/brothers"><li>Men of PKT</li></a>
-		<a href="/website/fifteens"><li class="active">Class of 2015</li></a>
+	<a href="/website/fifteens"><li class="active">Class of 2015</li></a>
 	<a href="/website/sixteens"><li>Class of 2016</li></a>
 	<a href="/website/seventeens"><li>Class of 2017</li></a>
 {% endblock %}
@@ -32,31 +32,66 @@ Brothers | Phi Kappa Theta
 				<h5>Men of PKT</h5>
 
 				<ul class="portrait">
+					
 				{% for brother in fifteens_info %}
 
 				<li>
-					<div class="img-caption" id="brother">
+
+
+					<a id="brother" data-componentID="{{ brother.3 }}" data-toggle="modal" data-target="#myModal">
+						<div class="img-caption" id="brother">
 						<img src="{{ brother.1 }}" width="200px">
 						<div class="caption">
 							<h6>{{ brother.0 }}</h6>
 							<h8>{{ brother.2 }}</h8>
 						</div>
-					</div>
-
-
-					<!-- <a href="/website/fifteens/{{ brother.3 }}">
-						<div class="brother-pic">
-							<img src="/static/img/photo.jpg">
-							<div class="name-overlay">
-								<h6>{{ brother.0 }}</h6>
-								<h7>{{ brother.2 }}</h7>
-							</div>
 						</div>
-					</a> -->
+					</a>
+
 				</li>
 
 				{% endfor %}
 				</ul>
+
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				    	 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+				    	<div class="brother-container">
+				      	<div class="row">
+						       
+
+				        	<div class="span4" id="photo"><span class="photo"></span>
+				        	<h9><div class="quote"></div></h9></div>
+
+				        	<div class='span4'><h4>
+				        		<span class="name"></span> 
+				        		(<span class="initials"></span>)</h4>
+					        	<h8>(aka <span class="nickname"></span>)</h8>
+				
+					        	<div class="attributes">
+					        		<div class="row">
+					        			<div class="span1">Hometown:</div>
+					        			<div class="span4"><span class="hometown"></span></div>
+					        		</div>
+					        		<div class="row">
+						        		<div class="span1">Major:</div>
+						        		<div class="span4"><span class="major"></span></div>
+					        		</div>
+					        		<div class="row">
+						        		<div class="span1">Activities:</div>
+						        		<div class="span4"><span class="activities"></span></div>
+					        		</div>
+					        		<div class="row">
+					        			<div class="span5"><span class="blurb"></span></div>
+					        		</div>
+					        	</div>
+				        	</div>
+				        </div>
+				    </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 
 

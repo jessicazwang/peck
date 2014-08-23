@@ -68,12 +68,17 @@ section#layout {
     padding: 50px 0 30px 15px;
     line-height: 1.6em;
     font-size: 1.1em; }
-    section#layout .about h3, section#layout .about h5, section#layout .about h6 {
+    section#layout .about h3, section#layout .about h4, section#layout .about h5, section#layout .about h6 {
       text-transform: uppercase;
       font-family: "Raleway",sans-serif;
       font-weight: 600;
       letter-spacing: 2.5px;
       text-align: center; }
+    section#layout .about h4 {
+      text-align: left;
+      font-weight: 600;
+      font-size: 1.1em;
+      line-height: 2px; }
     section#layout .about h5 {
       font-weight: 400;
       font-size: 1.1em;
@@ -97,12 +102,14 @@ section#layout {
       text-align: center; }
     section#layout .about .day-nav {
       margin-top: 10px;
+      margin-bottom: 20px;
       text-align: center; }
     section#layout .about .day-nav li {
       list-style-type: none;
       color: #000;
       display: inline-block;
       font-weight: 400;
+      font-size: .8em;
       margin: 0 15px 0 15px; }
     section#layout .about .day-nav li:hover {
       font-weight: 700;
@@ -173,3 +180,34 @@ section#layout {
       padding-left: 10px;
       top: -5px;
       line-height: 0; }
+  section#layout .modal {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: auto;
+    left: 0px;
+    border-radius: 1px; }
+    section#layout .modal h8 {
+      font-size: .8em; }
+    section#layout .modal h9 {
+      text-transform: none;
+      font-family: 'Open Sans',sans-serif;
+      letter-spacing: 0px;
+      font-style: italic;
+      font-size: .8em; }
+    section#layout .modal .quote {
+      margin: 10px 0 10px 0; }
+    section#layout .modal .row {
+      margin: 10px 0 10px 0;
+      padding: 0;
+      margin-left: -30px; }
+      section#layout .modal .row .span1 {
+        font-weight: 600;
+        font-size: 1em; }
+    section#layout .modal #photo.span4 {
+      width: 275px; }
+    section#layout .modal .span4 {
+      font-size: 1em; }
+  section#layout .brother-container {
+    padding: 30px 20px 20px 30px; }
+  section#layout .close {
+    margin: 10px 15px 10px 10px; }

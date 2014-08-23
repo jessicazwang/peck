@@ -1,5 +1,7 @@
 {% extends 'layout.html' %}
 
+{% load extras %}
+
 {% block title %}
 Brothers | Phi Kappa Theta
 {% endblock %}
@@ -27,10 +29,69 @@ Brothers | Phi Kappa Theta
 
 <div class="about">
 				<h3>Class of 2016</h3>
-				<h5>Men of Value</h5>
-				<p>
-				We r cool
-				</p>
+				<h5>Men of PKT</h5>
+
+								<ul class="portrait">
+					
+				{% for brother in sixteens_info %}
+
+				<li>
+
+
+					<a id="brother" data-componentID="{{ brother.3 }}" data-toggle="modal" data-target="#myModal">
+						<div class="img-caption" id="brother">
+						<img src="{{ brother.1 }}" width="200px">
+						<div class="caption">
+							<h6>{{ brother.0 }}</h6>
+							<h8>{{ brother.2 }}</h8>
+						</div>
+						</div>
+					</a>
+
+				</li>
+
+				{% endfor %}
+				</ul>
+
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				    	 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+				    	<div class="brother-container">
+				      	<div class="row">
+						       
+
+				        	<div class="span4" id="photo"><span class="photo"></span>
+				        	<h9><div class="quote"></div></h9></div>
+
+				        	<div class='span4'><h4>
+				        		<span class="name"></span> 
+				        		(<span class="initials"></span>)</h4>
+					        	<h8>(aka <span class="nickname"></span>)</h8>
+				
+					        	<div class="attributes">
+					        		<div class="row">
+					        			<div class="span1">Hometown:</div>
+					        			<div class="span4"><span class="hometown"></span></div>
+					        		</div>
+					        		<div class="row">
+						        		<div class="span1">Major:</div>
+						        		<div class="span4"><span class="major"></span></div>
+					        		</div>
+					        		<div class="row">
+						        		<div class="span1">Activities:</div>
+						        		<div class="span4"><span class="activities"></span></div>
+					        		</div>
+					        		<div class="row">
+					        			<div class="span5"><span class="blurb"></span></div>
+					        		</div>
+					        	</div>
+				        	</div>
+				        </div>
+				    </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 
 

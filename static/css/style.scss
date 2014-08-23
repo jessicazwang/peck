@@ -105,6 +105,14 @@ section#layout {
 			text-align:center;
 		}
 
+		h4 {
+			@extend h3;
+			text-align:left;
+			font-weight:600;
+			font-size:1.1em;
+			line-height:2px;
+		}
+
 		h5 {
 			@extend h3;
 			font-weight:400;
@@ -144,6 +152,7 @@ section#layout {
 
 		.day-nav {
 			margin-top:10px;
+			margin-bottom:20px;
 			text-align:center;
 		}
 
@@ -152,6 +161,7 @@ section#layout {
 			color:#000;
 			display:inline-block;
 			font-weight:400;
+			font-size:.8em;
 			margin:0 15px 0 15px;
 		}
 
@@ -262,4 +272,57 @@ section#layout {
 		}
 
 	}
+
+	.modal {
+		width:60vw;
+		margin-left:20vw;
+		margin-right:auto;
+		left:0px;
+		border-radius:1px;
+
+		h8 {
+			font-size:.8em;
+		}
+
+		h9 {
+			text-transform: none;
+			font-family: 'Open Sans',sans-serif;
+			letter-spacing:0px;
+			font-style:italic;
+			font-size:.8em;
+			
+		}
+
+		.quote {
+			margin:10px 0 10px 0;
+		}
+
+		.row {
+			margin:10px 0 10px 0;
+			padding: 0;
+			margin-left:-30px;
+
+			.span1 {
+				font-weight:600;
+				font-size:1em;
+			}
+		}
+
+		#photo.span4 {
+			width:275px;
+		}
+
+		.span4 {
+			font-size:1em;
+		}
+	}
+
+	.brother-container {
+		padding:30px 20px 20px 30px;
+	}
+
+	.close {
+		margin:10px 15px 10px 10px;
+	}
+
 }

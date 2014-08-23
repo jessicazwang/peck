@@ -19,6 +19,26 @@ $(document).ready(function(){
 		});
 	});
 
+	$('a#brother').click(function(){
+		var brother;
+		brother = $(this).attr("data-componentID");
+		$.get('/website/getBrother', {bro: brother}, function(data){
+			info = JSON.parse(data)
+			$('.modal-content .name').html(info['name'])
+			$('.modal-content .initials').html(info['initials'])
+			$('.modal-content .nickname').html(info['nickname'])
+			$('.modal-content .quote').html(info['quote'])
+			$('.modal-content .hometown').html(info['hometown'])
+			$('.modal-content .major').html(info['major'])
+			$('.modal-content .activities').html(info['activities'])
+			$('.modal-content .blurb').html(info['blurb'])
+			$('.modal-content .photo').html("<img src='"+info['photo']+"'>")
+
+		})
+	})
+
+
+
 
 
 });
