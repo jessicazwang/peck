@@ -7,34 +7,6 @@ section#main {
   width: 100vw;
   height: 100vh;
   background-color: #651616; }
-  section#main .container {
-    padding: 75px 10px 10px 10px; }
-  section#main #crest {
-    width: 30vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    opacity: 0; }
-  section#main #title-h1, section#main #title-h2 {
-    opacity: 0;
-    margin-left: -25px; }
-  section#main #title-h2 {
-    margin-right: -20px; }
-  section#main h1, section#main h2 {
-    text-align: center;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    color: #fff;
-    font-family: 'Raleway',sans-serif;
-    font-weight: 600;
-    font-size: 1.6em;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    line-height: 1em; }
-  section#main h2 {
-    font-weight: 300;
-    font-size: 1.3em; }
 
 section#layout {
   width: 100vw;
@@ -61,6 +33,7 @@ section#layout {
     margin-right: auto;
     font-family: "Open Sans", sans-serif;
     width: 50vw;
+    min-width: 320px;
     padding: 50px 0 30px 15px;
     line-height: 1.6em;
     font-size: 1.1em; }
@@ -78,7 +51,7 @@ section#layout {
     section#layout .about h5 {
       font-weight: 400;
       font-size: 1.1em;
-      line-height: 2px;
+      line-height: 1.3em;
       margin-bottom: 40px; }
     section#layout .about h6 {
       font-size: 1.1em;
@@ -207,3 +180,29 @@ section#layout {
     padding: 30px 20px 20px 30px; }
   section#layout .close {
     margin: 10px 15px 10px 10px; }
+
+@media (max-width: 760px) {
+  section#layout .sidebar {
+    border-right: none !important;
+    text-align: center; }
+    section#layout .sidebar li {
+      display: inline-block !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+      text-align: center !important; }
+    section#layout .sidebar li.active, section#layout .sidebar .nav .navbar li:hover, section#layout .nav .navbar .sidebar li:hover {
+      border-bottom: 3px solid #ae1717 !important;
+      border-left: none !important; }
+
+  section#layout .content {
+    width: 100% !important; }
+  section#layout .span3 {
+    width: 100% !important; }
+  section#layout .banner {
+    width: 100vw !important; }
+  section#layout .about {
+    padding-top: 10px !important; }
+    section#layout .about h6 {
+      line-height: 1.5em !important; } }

@@ -33,7 +33,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 
 .box {
 	width:11.11111%;
-	height:100%;
+	min-height:100%;
 	float:left;
 
 	h1 {
@@ -70,7 +70,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 	}
 
 	.contents {
-		margin-top:15vh;
 	}
 
 	.description {
@@ -81,13 +80,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 	}
 
 	.learnmore {
-		width:20vw;
+		width:250px;
 		padding: 5px 10px 5px 10px;
 		border: 3px solid #fff;
 		margin-right:auto;
 		margin-left:auto;
 		margin-top:30px;
-		font-size:.9em;
+		font-size:.8em;
 	}
 
 	.learnmore:hover {
@@ -97,12 +96,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 	a:hover {
 		text-decoration:none;
 	}
+
+	.filler {
+		height:10vh;
+	}
 }
 
 
 .arrowl {
 	opacity:.3;
-	width:3vw;
+	height:7vh;
+	min-height:25px;
 	position: relative;
 	margin-top:-50vh;
 	margin-left:20px;
@@ -115,7 +119,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 	margin-top:-50vh;
 	margin-right:20px;
 	float:right;
-	width:3vw;
+	height:7vh;
+	min-height:25px;
 }
 
 #arrow1r {
@@ -124,11 +129,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 
 #index {
 	.container {
-		padding: 75px 10px 10px 10px
+		padding: 0px 10px 10px 10px;
+		height:77vh;
 	}
 
 	#crest {
 		width:30vw;
+		min-width:300px;
 		margin-left:auto;
 		margin-right:auto;
 		margin-bottom:40px;
@@ -178,12 +185,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 }
 
 @media (max-width: 760px) { 
-	#crest {
-		width:300px;
-		margin-left:auto;
-		margin-right:auto;
-		margin-bottom:40px;
-		opacity:0;
+	.filler {
+		height:0 !important;
+	}
+
+	h3 {
+		font-size:1.3em !important;
+	}
+
+	#crest-filler {
+		height:10vh !important;
 	}
 
 }

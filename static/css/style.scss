@@ -51,6 +51,7 @@ section#layout {
 		margin-right:auto;
 		font-family: "Open Sans", sans-serif;
 		width:50vw;
+		min-width:320px;
 		padding: 50px 0 30px 15px;
 		line-height:1.6em;
 		font-size:1.1em;
@@ -75,7 +76,7 @@ section#layout {
 			@extend h3;
 			font-weight:400;
 			font-size:1.1em;
-			line-height:2px;
+			line-height:1.3em;
 			margin-bottom:40px;
 		}
 
@@ -282,5 +283,54 @@ section#layout {
 	.close {
 		margin:10px 15px 10px 10px;
 	}
+
+}
+
+@media (max-width: 760px) { 
+	section#layout .sidebar {
+		border-right: none !important;
+		text-align: center;
+
+		li {
+			display: inline-block !important;
+			padding-left: 0px !important;
+			padding-right:0px !important;
+			margin-left:10px !important;
+			margin-right:10px !important;
+			text-align:center !important;
+		}
+
+		li.active {			
+			border-bottom: 3px solid $bright-red !important;
+			border-left: none !important;
+		}
+
+		
+	}
+
+	section#layout {
+		.content {
+			width:100% !important;
+		}
+
+		.span3 {
+			width:100% !important;
+		}
+
+		.banner {
+			width:100vw !important;
+		}
+
+		.about {
+			padding-top:10px !important;
+
+			h6 {
+				line-height:1.5em !important;
+			}
+		}
+
+
+	}
+
 
 }
