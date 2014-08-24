@@ -21,6 +21,7 @@ TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 
 STATIC_PATH = os.path.join(PROJECT_PATH,'static')
 
+
 DATABASE_PATH = os.path.join(PROJECT_PATH,'website.db')
 
 # Quick-start development settings - unsuitable for production
@@ -95,6 +96,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     STATIC_PATH,
 )
+
+STATIC_ROOT = STATIC_PATH
 
 TEMPLATE_DIRS = (
     TEMPLATE_PATH,
