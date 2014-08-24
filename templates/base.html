@@ -27,14 +27,22 @@
 		Content here
 	{% endblock %}
 
+    {% if not index %}
+    <section id="footer">
+    <div class="pkt"><h5>Phi Kappa Theta, Mass Eta Chapter at MIT</h5></div>
+
+    <div class="contact"><a href="mailto:pkt-exec@mit.edu"><h5>Contact us</h5></a></div>
+    </section>
+    {% endif %}
+
     <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
-    <script src="{% static 'js/effects.js' %}"></script>
-    <script src="{% static 'js/img-captions.js' %}"></script>
-
     {% block scripts %}
     {% endblock %}
+
+    <script src="{% static 'js/effects.js' %}"></script>
+
 
 </body>
 </html>

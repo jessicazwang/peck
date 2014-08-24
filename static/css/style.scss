@@ -15,6 +15,46 @@ section#main {
 
 }
 
+section#footer {
+	bottom:0px;
+	height:45px;
+	background-color:#eee;
+	border-top:1px solid #ddd;
+	opacity:.7;
+
+	h5 {
+		font-family: 'Raleway', sans-serif;
+		font-weight:600;
+		letter-spacing:1.5px;
+		text-transform:uppercase;
+		font-size:1em;
+		color: #000;
+		opacity: .7;
+	}
+
+	h5:hover {
+		opacity: .9;
+		font-weight:700;
+		
+	}
+
+	a:hover {
+		text-transform:none;
+		text-decoration:none;
+		underline:none;
+	}
+
+	.pkt {
+		float: left;
+		margin-left:50px;
+	}
+	.contact {
+		float:right;
+		margin-right:50px;
+
+	}
+}
+
 
 
 section#layout {

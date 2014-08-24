@@ -11,16 +11,9 @@ $(document).ready(function(){
 			opacity:1,
 			marginRight:"+=20"
 	},1500);
-	$('#arrow1r').delay(800).animate({
+	$('#arrow1r').delay(500).animate({
 		opacity:.3
 	})
-
-	$(function() {
-		$('div#brother').makeCaption({
-		animation: 'fadeIn', // move, slide, fadeIn, scaleIn, rotate, or push
-		position: 'Below' // Below or Above
-		});
-	});
 
 	$('a#brother').click(function(){
 		var brother;
@@ -40,29 +33,60 @@ $(document).ready(function(){
 		})
 	})
 
-	$('img#arrow1r').click(function(){
-		$(document).scrollTo($('#about'),800)
+	$('img#arrow1r').click(function(e){
+		e.preventDefault();
+		$(document).scrollTo($('#about'),500)
 	})
-	$('img#arrow2l').click(function(){
-		$(document).scrollTo($('#index'),800)
+	$('img#arrow2l').click(function(e){
+		e.preventDefault();
+		$(document).scrollTo($('#index'),500)
 	})
-	$('img#arrow2r').click(function(){
-		$(document).scrollTo($('#rush'),800)
+	$('img#arrow2r').click(function(e){
+		e.preventDefault();
+		$(document).scrollTo($('#rush'),500)
 	})
-	$('img#arrow3l').click(function(){
-		$(document).scrollTo($('#about'),800)
+	$('img#arrow3l').click(function(e){
+		e.preventDefault();
+		$(document).scrollTo($('#about'),500)
 	})
-	$('img#arrow3r').click(function(){
-		$(document).scrollTo($('#more'),800)
+	$('img#arrow3r').click(function(e){
+		e.preventDefault();
+		$(document).scrollTo($('#more'),500)
 	})
-	$('img#arrow4l').click(function(){
-		$(document).scrollTo($('#rush'),800)
+	$('img#arrow4l').click(function(e){
+		e.preventDefault();
+		$(document).scrollTo($('#rush'),500)
 	})
-	$('img#arrow4r').click(function(){
-		$(document).scrollTo($('#contact'),800)
+	$('img#arrow4r').click(function(e){
+		e.preventDefault();
+		$(document).scrollTo($('#contact'),500)
 	})
-	$('img#arrow5l').click(function(){
-		$(document).scrollTo($('#more'),800)
+	$('img#arrow5l').click(function(e){
+		e.preventDefault();
+		$(document).scrollTo($('#more'),500)
+	})
+
+	$(function() {
+	   $("body").mousewheel(function(event, delta) {
+	      this.scrollLeft -= (delta * 2);
+	      event.preventDefault();
+	   });
+	});
+
+	$(function(){
+		var state=true;
+		$('.box .learnmore').hover(function(){
+			if (state) {
+				$(this).animate({
+					backgroundColor:'rgba(255,255,255,.3)',
+				},100)
+			} else {
+				$(this).animate({
+					backgroundColor:'rgba(255,255,255,0)',
+				},100)				
+			}
+			state = !state;
+		})
 	})
 
 

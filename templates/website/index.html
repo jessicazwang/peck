@@ -96,12 +96,12 @@ MIT Phi Kappa Theta | Mass Eta
 		<li id="contact" class="box">
 			<a name="contact"></a>
 			<div class="container">
-				<div class="filler"></div>
+				<div class="filler" id="contact-filler"></div>
 				<div class="contents">
 					<h4>Contact us</h4>
 					<div class="description">
 						<h3>Want to learn more about our brotherhood? Drop us a line!</h3>
-						<a href="mailto:pkt-brothers@mit.edu">
+						<a href="mailto:pkt-exec@mit.edu">
 							<div class="learnmore"><h1>Contact</h1></div>
 						</a>
 					</div>
@@ -116,5 +116,7 @@ MIT Phi Kappa Theta | Mass Eta
 {% endblock %}
 
 {% block scripts %}
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <script src="{% static 'js/jquery.scrollTo.min.js' %}"></script>
+<script src="{% static 'js/jquery.mousewheel.min.js' %}"></script>
 {% endblock %}

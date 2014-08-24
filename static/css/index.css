@@ -70,13 +70,14 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-top: 30px;
-    font-size: .8em; }
-  .box .learnmore:hover {
-    background-color: rgba(255, 255, 255, 0.3); }
+    font-size: .8em;
+    border-radius: 1px; }
   .box a:hover {
     text-decoration: none; }
   .box .filler {
     height: 10vh; }
+  .box #contact-filler {
+    height: 15vh; }
 
 .arrowl {
   opacity: .3;

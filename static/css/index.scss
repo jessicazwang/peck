@@ -87,11 +87,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 		margin-left:auto;
 		margin-top:30px;
 		font-size:.8em;
+		border-radius:1px;
 	}
 
-	.learnmore:hover {
-		background-color:rgba(255,255,255,.3);
-	}
+
 
 	a:hover {
 		text-decoration:none;
@@ -99,6 +98,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 
 	.filler {
 		height:10vh;
+	}
+
+	#contact-filler {
+		height:15vh;
 	}
 }
 
@@ -198,4 +201,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350006', end
 	}
 
 }
+
+
 

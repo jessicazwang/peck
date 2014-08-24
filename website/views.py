@@ -9,7 +9,7 @@ import json
 
 def index(request):
 	context = RequestContext(request)
-	context_dict = {'bold':'hi'}
+	context_dict = {'index':True}
 	return render_to_response('website/index.html',context_dict,context)
 
 def about(request):

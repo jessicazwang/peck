@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 
-{% load extras %}
+{% load static %}
 
 {% block title %}
 Brothers | Phi Kappa Theta
@@ -95,4 +95,9 @@ Brothers | Phi Kappa Theta
 			</div>
 
 
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/img-captions.js' %}"></script>
+<script src="{% static 'js/makecaption.js' %}"></script>
 {% endblock %}
