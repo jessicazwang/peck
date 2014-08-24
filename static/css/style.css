@@ -242,4 +242,7 @@ section#layout {
   section#layout .about {
     padding-top: 10px !important; }
     section#layout .about h6 {
-      line-height: 1.5em !important; } }
+      line-height: 1.5em !important; }
+
+  section#footer {
+    display: none; } }
