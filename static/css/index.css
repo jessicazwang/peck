@@ -105,7 +105,7 @@ body {
   height: 77vh; }
 #index #crest {
   width: 30vw;
-  min-width: 300px;
+  min-width: 100px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
